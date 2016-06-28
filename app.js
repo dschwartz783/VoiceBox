@@ -10,14 +10,13 @@
 // ~!~stop - stops recording/playing
 
 var fs = require('fs');
-
 var Discordie;
 try { Discordie = require("discordie"); } catch(e) {}
 
 var client = new Discordie({autoReconnect: true});
 
 var auth = { token: "MTk3NDM2OTMwOTE5NDk3NzI4.ClRk-A.WArrWXpw9p8LmW7F91FpaZnRYfk" };
-
+var should_send = true;
 client.connect(auth);
 
 client.Dispatcher.on("MESSAGE_CREATE", (e) => {
@@ -38,5 +37,7 @@ client.Dispatcher.on("VOICE_CONNECTED", e => {
     const user = e.voiceConnection.ssrcToMember(packet.ssrc);
     if (!user) return;
     if (user.id != recordingUser) return;
-    fs.writeFile("output.dat", packet);
-}})
+    
+        var file = fs.appendFile("output.dat", )
+    }
+})
