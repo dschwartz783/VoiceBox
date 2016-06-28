@@ -38,4 +38,5 @@ client.Dispatcher.on("VOICE_CONNECTED", e => {
     const user = e.voiceConnection.ssrcToMember(packet.ssrc);
     if (!user) return;
     if (user.id != recordingUser) return;
+    fs.writeFile("output.dat", );
 }})
