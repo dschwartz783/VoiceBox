@@ -38,6 +38,6 @@ client.Dispatcher.on("VOICE_CONNECTED", e => {
     if (!user) return;
     if (user.id != recordingUser) return;
     
-        var file = fs.appendFile("output.dat", )
+        var file = fs.appendFile("output.dat", packet)
     }
 })
