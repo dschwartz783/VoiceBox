@@ -16,7 +16,7 @@ try { Discordie = require("discordie"); } catch(e) {}
 
 var client = new Discordie({autoReconnect: true});
 
-var auth = { token: "MTk3NDM0NDcwNjI4OTgyODA0.ClRirQ.g4sbA62qxqhW0QmrYkp8zNTgn00" };
+var auth = { token: "MTk3NDM2OTMwOTE5NDk3NzI4.ClRk-A.WArrWXpw9p8LmW7F91FpaZnRYfk" };
 
 client.connect(auth);
 
